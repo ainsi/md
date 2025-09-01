@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f6f8fa;
+}
+
+.markdown-body {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+  .markdown-body {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: calc(100% - 40px);
+  }
+}
+
+@media (max-width: 500px) {
+  .markdown-body {
+    margin: 10px auto;
+    padding: 15px;
+    max-width: calc(100% - 20px);
+  }
+}

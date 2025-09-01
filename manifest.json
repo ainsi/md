@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Markdown Renderer",
+  "version": "1.0",
+  "description": "Renders text/markdown content as HTML using markdown-it.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["dist/main.js"]
+    }
+  ],
+  "permissions": [
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [
+    "github-markdown.min.css",
+    "layout.css"
+  ]
+}
